@@ -7,7 +7,6 @@ q = Queue()
 list_lock = Lock()
 discovered_domains = []
 
-
 def scan_subdomains(domain):
     global q
     while True:
@@ -46,7 +45,7 @@ def main(domain, n_threads, subdomains):
 
 if __name__ == "__main__":
     start = time.perf_counter()
-    main(domain='192.168.1.8', n_threads=10, subdomains=open('subDomains.txt').read().splitlines())
+    main(domain='google.com', n_threads=10, subdomains=open('subDomains.txt').read().splitlines())
     q.join()
 
     # save the file
