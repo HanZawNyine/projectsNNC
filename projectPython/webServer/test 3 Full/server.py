@@ -5,26 +5,26 @@ class helloHandller(BaseHTTPRequestHandler):
     def do_GET(self):
         print(self.path)
         if self.path == '/':
-            self.render(self.path,"/template/index.html"),
+            self.render(self.path, "/template/index.html"),
         elif self.path == '/second':
-            self.render(self.path,'/template/second.html')
+            self.render(self.path, '/template/second.html')
 
-    def render(self,path='/', template='/template/index.html'):
+    def render(self, path='/', template='/template/index.html'):
         template = template[1:]
-        print(template)
+        print("template : ", template)
         htmlStr = ''
         try:
             htmlStr = open(template).read()
-            #print(htmlStr)
-            self.send_response(200)
+            print("___", htmlStr)
+            # self.send_response(200)
         except:
-            htmlStr = f"{self.path}{template[1:]} is not found"
-            #print(htmlStr)
-            self.send_response(404)
+            htmlStr = f"{self.path}{template} is not found"
+            print(htmlStr)
+            # self.send_response(404)
 
-        self.send_header("Content-type", "text/html")
-        self.end_headers()
-        self.wfile.write(htmlStr.encode())
+        #self.send_header("Content-type", "text/html")
+        # self.end_headers()
+        # self.wfile.write(htmlStr.encode())
 
 
 if __name__ == '__main__':
