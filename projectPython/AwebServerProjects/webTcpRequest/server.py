@@ -66,6 +66,5 @@ while True:
     response = f'HTTP/1.0 200 OK\n\n'+content
     client_connection.sendall(response.encode())
     client_connection.close()
-.
 # Close socket
 server_socket.close()
