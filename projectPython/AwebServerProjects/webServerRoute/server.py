@@ -5,13 +5,13 @@ class helloHandller(BaseHTTPRequestHandler):
     def do_GET(self):
         print(self.path)
         if self.path == '/':
-            self.render(self.path, "/template/index.html"),
+            self.render(self.path, "/templates/index.html"),
         elif self.path == '/second':
-            self.render(self.path, '/template/second.html')
+            self.render(self.path, '/templates/second.html')
 
-    def render(self, path='/', template='/template/index.html'):
+    def render(self, path='/', template='/templates/index.html'):
         template = template[1:]
-        print("template : ", template)
+        print("templates : ", template)
         htmlStr = ''
         try:
             htmlStr = open(template).read()

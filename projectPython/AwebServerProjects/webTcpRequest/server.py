@@ -7,14 +7,14 @@ import socket
 
 # def renderTemplate(path):
 #     if path == '/':
-#         #template = 'template/index.html'
-#         fin = open('template/index.html').read()
+#         #templates = 'templates/index.html'
+#         fin = open('templates/index.html').read()
 #     elif path == '/about':
-#         template = 'template/about.html'
+#         templates = 'templates/about.html'
 #     else:
 #         content = "error"
 
-    #fin = open(template).read()
+    #fin = open(templates).read()
     #content = fin.read()
     #fin.close()
 
@@ -52,7 +52,7 @@ while True:
     if path.endswith('/'):
         path =path[:-1]
     if path == '':
-        #template = 'template/index.html'
+        #templates = 'templates/index.html'
         content = open('template/index.html').read()
     elif path == '/about':
         content = open('template/about.html').read()
@@ -60,7 +60,7 @@ while True:
     #      content = 'file  not found :3'
 
     # if path == '/test.jpg':
-    #     content = open('template/test.jpg').read().encode()
+    #     content = open('templates/test.jpg').read().encode()
 
     # Send HTTP response
     response = f'HTTP/1.0 200 OK\n\n'+content

@@ -78,8 +78,7 @@ class chromePassExtractor:
             else:
                 continue
             if date_created != 86400000000 and date_created:
-                print(f"Creation date: {str(self.get_chrome_datetime(date
-                _created))}")
+                print(f"Creation date: {str(self.get_chrome_datetime(date_created))}")
             if date_last_used != 86400000000 and date_last_used:
                 print(f"Last Used: {str(self.get_chrome_datetime(date_last_used))}")
             print("="*50)
