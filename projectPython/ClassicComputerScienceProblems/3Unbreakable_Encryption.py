@@ -19,10 +19,12 @@ def encrypt(original: str) -> tuple[int, int]:
 def decrypt(key1: int, key2: int) -> str:
     decrypted: int = key1 ^ key2  # XOR
     temp: bytes = decrypted.to_bytes((decrypted.bit_length() + 7) // 8, "big")
+    #print('aaa',temp.decode())
     return temp.decode()
 
 
 if __name__ == "__main__":
     key1, key2 = encrypt("I am Han Zaw Nyine")
+    print(key1,key2)
     result: str = decrypt(key1, key2)
     print(result)
