@@ -2,9 +2,11 @@ import zipfile
 from tqdm import tqdm
 
 class bruteZip:
+
     def __init__(self,zipFile,wordlist):
         self.zipFile = zipFile
         self.wordList=wordlist
+
     def brute(self):
         # initialize the Zip File object
         zip_file = zipfile.ZipFile(self.zipFile)
