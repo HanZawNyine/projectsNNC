@@ -1,13 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
+
+func index_handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello")
+
+}
 
 func main() {
-	a := 10
-	b := &a
-	fmt.Println(*b)
-	*b = 5
-	fmt.Println(a)
-	*b = *b * *b
-	fmt.Println(a)
+	http.HandleFunc("/", index_handler)
+	http.ListenAndServe(":8000", nil)
 }
