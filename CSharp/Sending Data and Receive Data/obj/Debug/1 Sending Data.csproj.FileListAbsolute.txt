@@ -1,0 +1,50 @@
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data\bin\Debug\1 Sending Data.exe.config
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data\bin\Debug\1 Sending Data.exe
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data\bin\Debug\1 Sending Data.pdb
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data\obj\Debug\1 Sending Data.csproj.AssemblyReference.cache
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data\obj\Debug\_1_Sending_Data.frmSendData.resources
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data\obj\Debug\_1_Sending_Data.Properties.Resources.resources
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data\obj\Debug\1 Sending Data.csproj.GenerateResource.cache
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data\obj\Debug\1 Sending Data.csproj.CoreCompileInputs.cache
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data\obj\Debug\1 Sending Data.exe
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data\obj\Debug\1 Sending Data.pdb
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data - 2\bin\Debug\1 Sending Data.exe.config
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data - 2\bin\Debug\1 Sending Data.exe
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data - 2\bin\Debug\1 Sending Data.pdb
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data - 2\obj\Debug\1 Sending Data.csproj.AssemblyReference.cache
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data - 2\obj\Debug\_1_Sending_Data.frmSendData.resources
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data - 2\obj\Debug\_1_Sending_Data.Properties.Resources.resources
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data - 2\obj\Debug\1 Sending Data.csproj.GenerateResource.cache
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data - 2\obj\Debug\1 Sending Data.csproj.CoreCompileInputs.cache
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data - 2\obj\Debug\1 Sending Data.exe
+D:\!Coding\C# Serial Communication (Serial Port)\1 Sending Data - 2\obj\Debug\1 Sending Data.pdb
+D:\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\bin\Debug\1 Sending Data.exe.config
+D:\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\bin\Debug\1 Sending Data.exe
+D:\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\bin\Debug\1 Sending Data.pdb
+D:\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\1 Sending Data.csproj.AssemblyReference.cache
+D:\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\_1_Sending_Data.frmSendData.resources
+D:\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\_1_Sending_Data.Properties.Resources.resources
+D:\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\1 Sending Data.csproj.GenerateResource.cache
+D:\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\1 Sending Data.csproj.CoreCompileInputs.cache
+D:\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\1 Sending Data.exe
+D:\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\1 Sending Data.pdb
+G:\! For me For Life\! Mine\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\bin\Debug\1 Sending Data.exe.config
+G:\! For me For Life\! Mine\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\bin\Debug\1 Sending Data.exe
+G:\! For me For Life\! Mine\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\bin\Debug\1 Sending Data.pdb
+G:\! For me For Life\! Mine\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\1 Sending Data.csproj.AssemblyReference.cache
+G:\! For me For Life\! Mine\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\_1_Sending_Data.frmSendData.resources
+G:\! For me For Life\! Mine\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\_1_Sending_Data.Properties.Resources.resources
+G:\! For me For Life\! Mine\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\1 Sending Data.csproj.GenerateResource.cache
+G:\! For me For Life\! Mine\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\1 Sending Data.csproj.CoreCompileInputs.cache
+G:\! For me For Life\! Mine\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\1 Sending Data.exe
+G:\! For me For Life\! Mine\!Coding\C# Serial Communication (Serial Port)\Sending Data and Receive Data\obj\Debug\1 Sending Data.pdb
+D:\projectsNNC\CSharp\Sending Data and Receive Data\bin\Debug\1 Sending Data.exe.config
+D:\projectsNNC\CSharp\Sending Data and Receive Data\bin\Debug\1 Sending Data.exe
+D:\projectsNNC\CSharp\Sending Data and Receive Data\bin\Debug\1 Sending Data.pdb
+D:\projectsNNC\CSharp\Sending Data and Receive Data\obj\Debug\1 Sending Data.csproj.AssemblyReference.cache
+D:\projectsNNC\CSharp\Sending Data and Receive Data\obj\Debug\_1_Sending_Data.frmSendData.resources
+D:\projectsNNC\CSharp\Sending Data and Receive Data\obj\Debug\_1_Sending_Data.Properties.Resources.resources
+D:\projectsNNC\CSharp\Sending Data and Receive Data\obj\Debug\1 Sending Data.csproj.GenerateResource.cache
+D:\projectsNNC\CSharp\Sending Data and Receive Data\obj\Debug\1 Sending Data.csproj.CoreCompileInputs.cache
+D:\projectsNNC\CSharp\Sending Data and Receive Data\obj\Debug\1 Sending Data.exe
+D:\projectsNNC\CSharp\Sending Data and Receive Data\obj\Debug\1 Sending Data.pdb
