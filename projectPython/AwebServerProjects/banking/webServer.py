@@ -50,11 +50,14 @@ while True:
             print(f'fname : {fname}')
             print(f'fpass : {fpass}')
 
-
+    print(f'path : {path}')
     if path.endswith('/'):
         path =path[:-1]
+
     if path == '':
         #templates = 'templates/index.html'
+        content = open('template/register.html').read()
+    elif path == '/register':
         content = open('template/register.html').read()
 
 

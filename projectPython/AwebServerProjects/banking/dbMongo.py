@@ -29,14 +29,12 @@ class mongoDB:
 
     def searchingAnyColumn(self,searchString:str):
         name = {'name': searchString}
-        address = {'address': searchString}
         name = self.collection.find(name)
-        address = self.collection.find(address)
-        #filteringResult = {}
-        #for key,value in name.items():
         for data in name:
             print(data)
 
+        address = {'address': searchString}
+        address = self.collection.find(address)
         for data in address:
             print(data)
         #print(filteringResult)
