@@ -1,3 +1,0 @@
-global a
-
-print(a)
