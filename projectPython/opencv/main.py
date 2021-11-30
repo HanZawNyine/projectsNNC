@@ -1,16 +1,16 @@
-# This is a sample Python script.
+import cv2
+import random
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+img = cv2.imread('assets/girl.jpg', -1)
 
+for i in range(100):
+    for j in range(img.shape[1]):
+        #print(img[i][j])
+        img[i][j] = [random.randint(0, 255), random.randint(
+            0, 255), random.randint(0, 255)]
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# img = cv2.resize(img, (0, 0), fx=0.5, fy=0.5)
+# cv2.imwrite('assets/new_img.jpg',img)
+cv2.imshow('Image', img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
