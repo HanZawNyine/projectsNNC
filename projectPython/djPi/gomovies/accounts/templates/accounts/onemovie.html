@@ -1,0 +1,56 @@
+{% extends 'accounts/master.html' %} {% block content %}
+<div class="container">
+  <div class="card mb-3">
+    <div class="row g-0 p-3">
+      <div class="col-md-4">
+        <img
+          src="{{onemovie.imageurl}}"
+          class="img-fluid rounded-start"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{onemovie.name}}</h5>
+          <p class="card-text">{{onemovie.description}}</p>
+          <p class="card-text">
+            <small class="text-muted">{{onemovie.created_at}}</small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Servers</th>
+            <th scope="col">Size</th>
+            <th scope="col">Resolution</th>
+            <th scope="col">created_at</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for server in servers %}
+          <tr>
+            <td>{{server.serverName}}</td>
+            <td>{{server.size}}</td>
+            <td>{{server.resolution}}</td>
+            <td>{{server.created_at}}</td>
+
+            <td>
+              <a href="{{server.serverurl}}" class="btn btn-primary"
+                >Download</a
+              >
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+   </div>
+  </div>
+ </div>
+<div>
+
+{% endblock content %}
+

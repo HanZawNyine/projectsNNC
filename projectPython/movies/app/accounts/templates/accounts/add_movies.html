@@ -1,0 +1,9 @@
+{% extends 'accounts/master.html' %}
+ {% block content %}
+
+<form action="" method="POST">
+{% csrf_token %}
+{{addmovies}} 
+<button type="submit" class="btn btn-primary">add Movies</button>
+</form>
+{% endblock content %}</p>

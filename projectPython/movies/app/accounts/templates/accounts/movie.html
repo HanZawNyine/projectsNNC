@@ -1,0 +1,46 @@
+{% extends 'accounts/master.html' %} {% block content %}
+<div class="card mb-3">
+  <div class="row g-0 p-3">
+    <div class="col-md-4">
+      <img
+        src="https://miro.medium.com/max/960/1*iaXUk9xJiqaJKXyHzpSRWA.jpeg"
+        class="img-fluid rounded-start"
+        alt="..."
+      />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{movie.name}}</h5>
+        <p class="card-text">{{movie.description}}</p>
+        <p class="card-text">
+          <small class="text-muted">{{movie.created_at}}</small>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Downloads Links</th>
+          <th scope="col">Servers</th>
+          <th scope="col">Size</th>
+          <th scope="col">Resolution</th>
+          <th scope="col">Dwonload</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for server in serverlinks %}
+        <tr>
+          <td>{{server.linkUrl}}</td>
+          <td>Google Drive</td>
+          <td>1.15GB</td>
+          <td>4K</td>
+          <td><button class="btn btn-primary">Download</button></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock content %}

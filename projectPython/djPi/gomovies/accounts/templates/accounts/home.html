@@ -1,0 +1,79 @@
+{% extends 'accounts/master.html' %} {% block content %}
+<!-- Header-->
+<header class="bg-dark py-5">
+  <div class="container px-5">
+    <div class="row gx-5 justify-content-center">
+      <div class="col-lg-6">
+        <div class="text-center my-5">
+          <h1 class="display-5 fw-bolder text-white mb-2">Relax and Watch !</h1>
+          <p class="lead text-white-50 mb-4">
+            Movies များ ကြည့်ရှုနိုင်သည်။ ကြော်ငြာများ ထည့်သွင်းနိုင်သည်။
+          </p>
+          <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+            <a
+              class="btn btn-primary btn-lg px-4 me-sm-3"
+              href="{% url 'all' %}"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <!-- Features section-->
+  <section class="py-5 border-bottom" id="features">
+    <div class="container px-5 my-5">
+      <div class="row gx-5">
+        <div class="col-lg-4 mb-1 mt-1 mb-lg-0">
+          <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+            <img src="{{lastDrama.imageurl}}" alt="Drama" width="200px" />
+          </div>
+          <h2 class="h4 fw-bolder">{{lastDrama.name}}</h2>
+          <p>{{lastDrama.desription}}</p>
+            <p>{{lastDrama.created_at}}</p>
+          <a
+            class="text-decoration-none"
+            href="{% url 'onemovies' lastDrama.id %}"
+          >
+            See More ...
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="col-lg-4 mb-1 mt-1 mb-lg-0">
+          <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+            <img src="{{lastAction.imageurl}}" alt="Drama" width="200px" />
+          </div>
+          <h2 class="h4 fw-bolder">{{lastAction.name}}</h2>
+          <p>{{lastAction.desription}}</p>
+          <p>{{lastAction.created_at}}</p>
+          <a
+            class="text-decoration-none"
+            href="{% url 'onemovies' lastAction.id %}"
+          >
+            See More ...
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-lg-4 mb-1 mt-1 mb-lg-0">
+          <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+            <img src="{{lastCodemy.imageurl}}" alt="Drama" width="100px" />
+          </div>
+          <h2 class="h4 fw-bolder">{{lastCodemy.name}}</h2>
+          <p>{{lastCodemy.desription}}</p>
+          <p>{{lastCodemy.created_at}}</p>
+          <a
+            class="text-decoration-none"
+            href="{% url 'onemovies' lastCodemy.id %}"
+          >
+            See More ...
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock content %}

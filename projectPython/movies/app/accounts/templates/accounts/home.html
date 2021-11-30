@@ -1,0 +1,30 @@
+{% extends 'accounts/master.html' %} {% block content %}
+
+<h1 class="text-center mt-3">Watch Movies</h1>
+<div class="row row-cols-1 row-cols-md-6 g-4">
+  {% for movie in allMovie %}
+  <a href="{% url 'movies.show' movie.id %}" class="btn">
+    <div class="col">
+      <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+        <img
+          src="https://miro.medium.com/max/960/1*iaXUk9xJiqaJKXyHzpSRWA.jpeg"
+          class="card-img-top"
+          height="200px"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{movie.name}}</h5>
+          <p>{{created_at}}</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+{% endblock content %}

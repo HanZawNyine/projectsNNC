@@ -1,0 +1,31 @@
+{% extends 'accounts/master.html' %} {% block content %}{% load widget_tweaks %}
+<div class="container mt-3">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          src="/{{request.user.customer.profilePic}}"
+          class="img-fluid rounded-start"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %} {% for input in forms %} {{input.label}}
+            {{input|add_class:'form-control'}} {% endfor %}
+            <button type="submit" class="btn btn-primary mt-3">Update</button>
+            <a href="{% url 'customer_profile' %}" class="btn btn-danger mt-3"
+              >Cancel</a
+            >
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <img src="" width="300px" style="border-radius: 50%" />
+  </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,27 @@
+{% extends 'accounts/master.html' %} {% block content %} {% load widget_tweaks %}
+<div class="container mt-5">
+<form action="" method="POST">
+  <h1 class="text-center text-success">Please Register !</h1>
+  {% csrf_token %}
+  <div class="mb-3">
+   <lable for="">Username</label>
+   <input type="text" name="username" class="form-control"/>
+  </div>
+  <div class="mb-3">
+   <lable for="">Password</label>
+   <input type="password" name="password" class="form-control"/>
+  
+  {% for message in messages %}
+    <div class="alert alert-danger mt-3" role="alert">
+    {{message}}
+    </div>
+  {% endfor %}
+
+    
+  </div>
+   
+  <input type="submit" value="Login" class="btn btn-primary" />
+  <a href="{% url 'root' %}" class="btn btn-danger" type="button">Cancel</a>
+</form>
+</div>
+{% endblock content %}

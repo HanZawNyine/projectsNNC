@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a href="{% url 'root'%}"
+      ><img
+        src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/124039599_2806364802981983_9077661443383988354_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGvFicfPpxzi09FzF-6zHa02-u7e-4Ndjrb67t77g12OsCnbGDxZECYNUJqblfZqT7p4vA68-cvVaaJY8NnBtqo&_nc_ohc=bi_pjoQuR4QAX8KvAw-&_nc_ht=scontent-sin6-2.xx&oh=77dbf90f72d6b7e502c4e5aad183fd03&oe=61C575FF"
+        class="card-img-top"
+        alt="..."
+        height="50px"
+    /></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url 'movie'%}">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Series</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Actions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Drama</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Comedy</a>
+        </li>
+      </ul>
+      <form class="d-flex me-2">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+      <div class="text-white me-2">UserName</div>
+      <div class="text-white me-2"><a href="#">LogOut</a></div>
+    </div>
+  </div>
+</nav>

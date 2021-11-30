@@ -1,0 +1,17 @@
+{% extends 'accounts/master.html' %} {% block content %} {% load widget_tweaks %}
+<div class="container">
+  <form action="" method="POST">
+    {% csrf_token %} {% csrf_token %}
+    <h1 class="text-center text-success">Please Register !</h1>
+    {% for input in registerForm %}
+    <div class="mb-3">
+      {{input.label}} {{input|add_class:'form-control'}}
+      <div class="text-danger">{{input.errors}}</div>
+    </div>
+    {% endfor %}
+    <input type="submit" value="Register" class="btn btn-primary" />
+    <a href="{% url 'root' %}" class="btn btn-danger" type="button">Cancel</a>
+  </form>
+  
+</div>
+{% endblock content %}

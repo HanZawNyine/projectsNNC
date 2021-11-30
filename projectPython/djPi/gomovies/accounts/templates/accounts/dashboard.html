@@ -1,0 +1,64 @@
+{% extends 'accounts/master.html' %} {% block content %}
+<div class="container mt-3">
+  <div class="card-group p-5">
+    <div class="card text-center text-white bg-primary">
+      <div class="card-header"><h1>Movies</h1></div>
+      <div class="card-body">
+        <h1 class="card-text">{{countmovie}}</h1>
+      </div>
+      <div class="card-footer text-muted">
+        <a href="#" class="btn btn-primary">all movies</a>
+      </div>
+    </div>
+    <div class="btn"></div>
+    <div class="card text-center text-white bg-danger">
+      <div class="card-header"><h1>Users</h1></div>
+      <div class="card-body">
+        <h1 class="card-text">{{usertotal}}</h1>
+      </div>
+      <div class="card-footer text-muted">
+        <a href="#" class="btn btn-danger">all users</a>
+      </div>
+    </div>
+  </div>
+ 
+      <table class="table bg-body text-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Image Url</th>
+            <th scope="col">Movie Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Type</th>
+            <th scope="col">created_at</th>
+            <th scope="col">Update</th>
+            <th scope="col">Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for movie in movies %}
+          <tr>
+            <td>{{movie.id}}</td>
+            <td>
+              <img
+                src="{{movie.imageurl}}"
+                class="img-fluid"
+                alt="..."
+                width="30px"
+              />
+            </td>
+            <td>{{movie.name}}</td>
+            <td>{{movie.desription}}</td>
+            <td>{{movie.type}}</td>
+            <td>{{movie.created_at}}</td>
+            <td><a href="{% url 'updatemovies' movie.id %}" class="btn btn-primary">Update</a></td>
+            <td><a href="{% url 'remove' movie.id %}" class="btn btn-danger">Remove</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+       </div>
+    </div>
+  </div>
+  {% endblock content %}
+

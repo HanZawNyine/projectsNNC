@@ -1,0 +1,73 @@
+{% extends 'accounts/master.html' %} {% block content %}
+<div class="row text-center">
+  <div class="col-sm-4">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem">
+      <div class="card-header">Pending</div>
+      <div class="card-body">
+        <h1 class="card-title">{{pending}}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem">
+      <div class="card-header">Delivered</div>
+      <div class="card-body">
+        <h1 class="card-title">{{delivered}}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem">
+      <div class="card-header">Totals</div>
+      <div class="card-body">
+        <h1 class="card-title">{{totals}}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <table class="table table-dark col-sm-5">
+    <thead>
+      <tr>
+        <th scope="col">Customer</th>
+        <th scope="col">Product</th>
+        <th scope="col">Status</th>
+        <th scope="col">Update</th>
+        <th scope="col">Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for order in orders %}
+
+      <tr>
+        <td>{{order.customer}}</td>
+        <td>{{order.product}}</td>
+        <td>{{order.status}}</td>
+        <td><a href="#" class="btn btn-success">Update</a></td>
+        <td><a href="#" class="btn btn-danger">Remove</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <div class="col-sm"></div>
+  <table class="table table-dark col-sm-5">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for customer in customers %}
+      <tr>
+        <td>{{customer.name}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{customer.phoneNo}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock content %}

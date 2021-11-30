@@ -29,7 +29,8 @@ from sys import getsizeof
 
 
 gene: str = ""
-for i in range(0, b.bit_length() - 1, 7):  # - 1 to exclude         sentinel
+for i in range(0, b.bit_length() - 1, 7):
+    print(i)# - 1 to exclude         sentinel
     bits: int = b >> i & 0b1111111
     gene += chr(bits)
     # print(bin(bits))

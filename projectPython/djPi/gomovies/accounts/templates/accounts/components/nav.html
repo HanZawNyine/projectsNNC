@@ -1,0 +1,84 @@
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'root' %}">Watching Movies</a>
+    {% if request.user.is_authenticated %}
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'all' %}"
+              >All</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'movies' %}">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'series' %}">Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'action' %}">Action</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'drama' %}">Drama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'comedy' %}">Comedy</a>
+          </li>
+          {% endif %} 
+      </ul>
+      <form action="{% url 'searchmovies' %}" method="POST" class="search">
+          {% csrf_token %}
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              name="searchinput"
+              placeholder="Search Movies ..."
+            />
+            <button type="submit" class="input-group-text btn-light">
+              <i class="bi bi-search me-2"></i>
+            </button>
+          </div>
+      </form>
+    
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">     
+       {% if request.user.is_authenticated %}  
+          <a href="{% url 'customer_profile' %}">
+          <li class="nav-item">
+            <img
+              src="/{{request.user.customer.profilePic}}"
+              width="40px"
+              height="40px"
+              style="border-radius: 50%"
+              alt="load image"
+              class="text-white"
+            />
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'customer_profile' %}"
+              >{{request.user.username}}</a
+            >
+          </li>
+          </a>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'logout' %}">LogOut</a>
+          </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'login' %}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'register' %}">Register</a>
+            </li>
+            {% endif %}
+      </ul>
+          
+
+      
+      </div>
+    </div>
+  </div>
+</nav>
