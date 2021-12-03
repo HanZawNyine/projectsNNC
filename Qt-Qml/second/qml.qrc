@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>images/image-animated.gif</file>
+    </qresource>
+</RCC>
