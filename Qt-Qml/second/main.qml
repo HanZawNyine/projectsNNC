@@ -2,41 +2,38 @@ import QtQuick
 import QtQuick.Window
 
 Window {
+    id:root
     width: 400
-    height: 350
+    height: 400
     visible: true
-    title: qsTr("Hello World")
-    color: '#00a3fc'
+    title: qsTr("Digital Clock")
+    color: 'white'
 
-    AnimatedImage{
-        id:animation
-        x:100
-        y:50
-        width: 200
-        height:200
-        source: "qrc:/images/image-animated.gif"
-    }
+    Flickable{
+        id:flick
+        width: 400
+        height: 400
+        contentHeight: 1000
+        contentWidth:  1000
+        anchors.centerIn: parent
 
-    Rectangle{
-        x:100
-        y:260
-        width: 200
-        height: 24
+        PinchArea{
+            anchors.fill: parent
+            pinch.target: img
+            pinch.maximumScale: 1.0
+            pinch.minimumScale: 0.1
+            pinch.dragAxis: Pinch.XAndYAxis
 
-        color: 'black'
 
-        Rectangle{
-            width: 4
-            height: 24
-            color: 'red'
-
-            x: (parent.width-width)*animation.currentFrame/animation.frameCount
         }
-        Text {
 
-            text: "Frames %1 of %2".arg(animation.currentFrame).arg(animation.frameCount)
-            color: 'white'
-            font.pixelSize: 18
+        Image {
+            id: img
+            source: "qrc:/images/image-animated.gif"
+            width: flick.contentWidth
+            height: flick.contentHeight
         }
     }
+
+
 }

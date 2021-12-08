@@ -2,5 +2,11 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>images/image-animated.gif</file>
+        <file>images/rocket.png</file>
+        <file>images/b.png</file>
+        <file>images/h.png</file>
+        <file>images/m.png</file>
+        <file>images/background.png</file>
+        <file>images/WIN_20211202_23_00_39_Pro.jpg</file>
     </qresource>
 </RCC>
