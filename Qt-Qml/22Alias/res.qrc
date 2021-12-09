@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>MainPage.qml</file>
+        <file>Section1.qml</file>
+        <file>Section2.qml</file>
+    </qresource>
+</RCC>
