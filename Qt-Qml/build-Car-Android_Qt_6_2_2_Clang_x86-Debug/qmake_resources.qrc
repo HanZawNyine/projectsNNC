@@ -1,0 +1,5 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/Car">
+<file alias="main.qml">D:/projectsNNC/Qt-Qml/Car/main.qml</file>
+</qresource>
+</RCC>

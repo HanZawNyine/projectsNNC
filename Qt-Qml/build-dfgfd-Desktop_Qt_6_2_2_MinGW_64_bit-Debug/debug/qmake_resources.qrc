@@ -1,0 +1,5 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/dfgfd">
+<file alias="main.qml">D:/projectsNNC/Qt-Qml/dfgfd/main.qml</file>
+</qresource>
+</RCC>

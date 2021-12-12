@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>MainPage.qml</file>
+        <file>img/icons8_bluetooth.ico</file>
+        <file>img/icons8_home.ico</file>
+        <file>img/icons8_itunes.ico</file>
+        <file>img/icons8_settings.ico</file>
+        <file>img/icons8_camera_32.png</file>
+        <file>img/icons8_car.ico</file>
+        <file>img/icons8_wi-fi.ico</file>
+        <file>img/icons8_near_me_16.png</file>
+        <file>img/icons8_fan_head_32.png</file>
+        <file>Car.qml</file>
+        <file>img/icons8_Car_Charger_32.png</file>
+        <file>img/icons8_cab_stand_32.png</file>
+        <file>img/icons8_car_door.ico</file>
+        <file>img/icons8_fog_lamp.ico</file>
+        <file>Music.qml</file>
+        <file>img/icons8_shuffle.ico</file>
+        <file>img/icons8_play.ico</file>
+        <file>img/icons8_fast_forward.ico</file>
+        <file>img/icons8_playlist.ico</file>
+        <file>img/icons8_brake_warning.ico</file>
+        <file>img/icons8_brake_pedal.ico</file>
+        <file>img/icons8_info.ico</file>
+        <file>img/icons8_sound.ico</file>
+        <file>About.qml</file>
+        <file>img/icons8_wheel.ico</file>
+        <file>img/icons8_charging_station.ico</file>
+    </qresource>
+</RCC>

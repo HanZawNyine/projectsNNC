@@ -1,3 +1,4 @@
+import time
 def calculate_pi(n_terms: int) -> float:
     numerator: float = 4.0
     denominator: float = 1.0
@@ -11,4 +12,6 @@ def calculate_pi(n_terms: int) -> float:
     return pi
 
 if __name__ == "__main__":
-    print(calculate_pi(1000000))
+    start = time.perf_counter()
+    print(calculate_pi(10000))
+    print(time.perf_counter()-start)

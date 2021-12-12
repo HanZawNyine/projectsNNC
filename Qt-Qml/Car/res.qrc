@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Radio.qml</file>
+        <file>img/icons8_power_off_button_32.png</file>
+        <file>img/icons8_music_32.png</file>
+        <file>img/icons8_settings_32.png</file>
+        <file>img/icons8_radio_32.png</file>
+        <file>img/icons8_optical_disc_32.png</file>
+        <file>img/icons8_bluetooth_32.png</file>
+        <file>img/icons8_aux_cable_32.png</file>
+        <file>img/icons8_camera_32.png</file>
+        <file>img/icons8_phone_32.png</file>
+        <file>img/bg.jpg</file>
+        <file>StartingPage.qml</file>
+        <file>Settings.qml</file>
+        <file>img/icons8_star_32.png</file>
+        <file>img/icons8_maintenance_32.png</file>
+        <file>img/icons8_paint_palette_32.png</file>
+        <file>img/icons8_sound_32.png</file>
+        <file>img/icons8_frisbee_disk_32.png</file>
+        <file>img/icons8_back_32.png</file>
+        <file>img/icons8_home_32.png</file>
+        <file>Music.qml</file>
+        <file>img/icons8_play_32.png</file>
+        <file>img/icons8_fast_forward_32.png</file>
+        <file>img/icons8_rewind_32.png</file>
+        <file>img/icons8_playlist_32.png</file>
+        <file>img/icons8_shuffle_32.png</file>
+        <file>img/musicc.jpg</file>
+        <file>Camera.qml</file>
+        <file>img/icons8_pause_16.png</file>
+    </qresource>
+</RCC>
