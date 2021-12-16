@@ -1,0 +1,3 @@
+D:/projectsNNC/Dsa C CPP/Pre Class/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/projectsNNC/Dsa C CPP/Pre Class/cmake-build-debug/CMakeFiles/Pre_Class.dir
+D:/projectsNNC/Dsa C CPP/Pre Class/cmake-build-debug/CMakeFiles/edit_cache.dir

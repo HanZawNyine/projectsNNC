@@ -1,0 +1,3 @@
+D:/projectsNNC/C Programming/Conversion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/projectsNNC/C Programming/Conversion/cmake-build-debug/CMakeFiles/Conversion.dir
+D:/projectsNNC/C Programming/Conversion/cmake-build-debug/CMakeFiles/edit_cache.dir
